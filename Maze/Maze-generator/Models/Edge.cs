@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace AI_opdrachten.Models
+namespace Maze_generator.Models
 {
     /// <summary>
     ///     A wall between two cells
@@ -59,8 +59,7 @@ namespace AI_opdrachten.Models
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
-            return Equals((Edge) obj);
+            return obj.GetType() == GetType() && Equals((Edge) obj);
         }
 
         public override int GetHashCode()

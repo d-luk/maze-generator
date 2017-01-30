@@ -1,11 +1,14 @@
-﻿namespace AI_opdrachten
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Maze_generator
 {
     sealed partial class Form1
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -135,13 +138,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericHeight;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericWidth;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label1;
+        private NumericUpDown numericHeight;
+        private Button button1;
+        private NumericUpDown numericWidth;
     }
 }
 

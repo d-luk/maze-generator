@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace AI_opdrachten.Models
+namespace Maze_generator.Models
 {
     /// <summary>
     ///     A collection of cells not seperated by an <see cref="Edge" />

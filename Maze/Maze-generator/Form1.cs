@@ -2,12 +2,12 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace AI_opdrachten
+namespace Maze_generator
 {
     public sealed partial class Form1 : Form
     {
         private Maze _maze;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -15,7 +15,7 @@ namespace AI_opdrachten
             const int initialWidth = 15, initialHeight = 15;
             _maze = new Maze(new Size(initialWidth, initialHeight));
             numericWidth.Value = initialWidth;
-            numericHeight.Value = initialHeight; 
+            numericHeight.Value = initialHeight;
 
             Refresh();
         }
@@ -40,7 +40,8 @@ namespace AI_opdrachten
                 {
                     // Draw a horizontal line
                     var x = (float) Math.Max(edge.Cell1, edge.Cell2)%_maze.Size.Width*cellWidth;
-                    var y = (float) Math.Floor((double) Math.Min(edge.Cell1, edge.Cell2)/_maze.Size.Width + 1)*cellHeight;
+                    var y = (float) Math.Floor((double) Math.Min(edge.Cell1, edge.Cell2)/_maze.Size.Width + 1)*
+                            cellHeight;
                     g.DrawLine(pen, x, y, x + cellWidth, y);
                 }
                 else

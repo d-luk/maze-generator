@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using AI_opdrachten.Models;
+using Maze_generator.Models;
 
-namespace AI_opdrachten
+namespace Maze_generator
 {
     public class Maze
     {
@@ -14,7 +14,7 @@ namespace AI_opdrachten
         public Maze(Size size)
         {
             var edgesToCheck = Edge.Generate(size);
-            var sets = new DisjointSets(size.Height * size.Width);
+            var sets = new DisjointSets(size.Height*size.Width);
             var mazeEdges = new List<Edge>();
 
             var random = new Random();
@@ -40,6 +40,5 @@ namespace AI_opdrachten
             Edges = edgesToCheck.Concat(mazeEdges).ToArray();
             Size = size;
         }
-        
     }
 }
