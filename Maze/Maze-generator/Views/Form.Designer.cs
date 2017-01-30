@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace Maze_generator
+namespace Maze_generator.Views
 {
-    sealed partial class Form1
+    sealed partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -117,14 +117,14 @@ namespace Maze_generator
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.generateBtn_Click);
             // 
-            // Form1
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 480);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "Form1";
+            this.Name = "Form";
             this.Text = "Maze generator";
             this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
             this.panel2.ResumeLayout(false);

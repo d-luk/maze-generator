@@ -70,15 +70,8 @@ namespace Maze_generator.Models
             }
         }
 
-        public static bool operator ==(Edge left, Edge right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(Edge left, Edge right)
-        {
-            return !Equals(left, right);
-        }
+        public static bool operator ==(Edge left, Edge right) => Equals(left, right);
+        public static bool operator !=(Edge left, Edge right) => !Equals(left, right);
 
         #endregion
     }

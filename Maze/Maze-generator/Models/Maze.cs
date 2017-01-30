@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using Maze_generator.Models;
 
-namespace Maze_generator
+namespace Maze_generator.Models
 {
     public class Maze
     {
@@ -32,7 +31,7 @@ namespace Maze_generator
                 if (set1 != set2) sets.Union(set1, set2);
                 else mazeEdges.Add(edge);
 
-                // Remove edge, so it isn't checked again
+                // Remove edge, so it won't be checked again
                 edgesToCheck.RemoveAt(edgeIndex);
             }
 

@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Maze_generator.Models;
 
-namespace Maze_generator
+namespace Maze_generator.Views
 {
-    public sealed partial class Form1 : Form
+    public sealed partial class Form : System.Windows.Forms.Form
     {
         private Maze _maze;
 
-        public Form1()
+        public Form()
         {
             InitializeComponent();
 

@@ -39,13 +39,13 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maze.cs" />
+    <Compile Include="Models\Maze.cs" />
     <Compile Include="Models\DisjointSets.cs" />
     <Compile Include="Models\Edge.cs" />
     <Compile Include="Program.cs" />
